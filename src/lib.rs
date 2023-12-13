@@ -7,7 +7,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 #[cfg(test)]
 mod tests {
     use super::*;
-    
+
     #[test]
     fn zero_plus_zero() {
         assert_eq!(0, add(0, 0));
@@ -21,5 +21,10 @@ mod tests {
     #[test]
     fn two_plus_zero() {
         assert_eq!(2, add(2, 0));
+    }
+
+    #[test]
+    fn zero_plus_two() {
+        assert_eq!(2, add(0, 2));
     }
 }
